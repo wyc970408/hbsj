@@ -1,0 +1,35 @@
+15:52:47.178 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 6320 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+15:52:47.200 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+15:52:56.593 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+15:52:56.603 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache]
+15:52:59.608 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+15:53:01.854 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+15:53:01.905 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+15:53:01.907 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+15:53:01.945 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener - [log,180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\jdk8\jre\bin;D:/java8/bin/server;D:/java8/bin;D:/java8/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\jdk8\bin;D:\apache-maven-3.3.9\bin;D:\tortoiseSVN\bin;E:\gradle\gradle-3.5\bin;E:\gradle\gradle-3.5\bin;D:\node\;E:\Git\cmd;C:\Users\hqq\AppData\Local\Microsoft\WindowsApps;C:\Users\hqq\AppData\Roaming\npm;E:\Microsoft VS Code\bin;D:\eclipse-oxygen;;.]
+15:53:02.289 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+15:53:08.834 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:53:11.262 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+15:53:11.308 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+15:53:11.650 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:53:12.026 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getActivityInfoUsingGET_1
+15:53:12.031 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getAllCateUsingGET_1
+15:53:12.598 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getAllGoodsUsingGET_1
+15:53:12.611 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getBrandInfoUsingGET_1
+15:53:12.676 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+15:53:12.696 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+15:53:12.767 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 27.117 seconds (JVM running for 28.866)
+15:53:19.197 [http-nio-80-exec-1] INFO  o.a.t.u.h.p.Cookie - [log,180] - A cookie header was received [1544754679,1544857225] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+15:53:19.209 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+15:53:19.308 [http-nio-80-exec-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+15:53:19.371 [http-nio-80-exec-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'shiro-activeSessionCache' does not yet exist.  Creating now.
+15:53:19.373 [http-nio-80-exec-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [shiro-activeSessionCache]
+15:53:20.315 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+15:53:20.607 [pool-2-thread-1] INFO  c.a.d.p.DruidDataSource - [init,930] - {dataSource-1} inited
+15:53:22.533 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+15:53:23.704 [pool-3-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+15:54:11.176 [pool-3-thread-3] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:03:20.315 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:03:20.398 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+16:13:20.316 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:13:20.361 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.

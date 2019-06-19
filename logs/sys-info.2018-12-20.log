@@ -1,0 +1,21 @@
+15:12:27.829 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 9592 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+15:12:27.895 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+15:12:40.465 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+15:12:40.468 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache]
+15:12:44.727 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+15:12:48.509 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+15:12:48.579 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+15:12:48.582 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+15:12:48.619 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener - [log,180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\jdk8\jre\bin;D:/java8/bin/server;D:/java8/bin;D:/java8/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\jdk8\bin;D:\apache-maven-3.3.9\bin;D:\tortoiseSVN\bin;E:\gradle\gradle-3.5\bin;E:\gradle\gradle-3.5\bin;D:\node\;E:\Git\cmd;C:\Users\hqq\AppData\Local\Microsoft\WindowsApps;C:\Users\hqq\AppData\Roaming\npm;E:\Microsoft VS Code\bin;D:\eclipse-oxygen;;.]
+15:12:49.078 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+15:12:58.080 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:13:03.389 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+15:13:03.481 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+15:13:04.132 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:13:04.540 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getActivityInfoUsingGET_1
+15:13:04.550 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getAllCateUsingGET_1
+15:13:04.557 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getAllGoodsUsingGET_1
+15:13:04.569 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getBrandInfoUsingGET_1
+15:13:05.460 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+15:13:05.500 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+15:13:05.649 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 39.686 seconds (JVM running for 42.021)

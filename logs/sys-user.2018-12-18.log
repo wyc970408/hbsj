@@ -1,0 +1,2 @@
+15:53:23.704 [pool-3-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+15:54:11.176 [pool-3-thread-3] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]

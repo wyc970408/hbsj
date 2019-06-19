@@ -1,0 +1,12 @@
+<<<<<<< .mine
+10:11:40.195 [pool-3-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+10:15:23.556 [pool-3-thread-2] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+10:15:24.966 [pool-3-thread-4] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+12:58:57.853 [pool-7-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+13:03:24.155 [pool-2-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+14:10:02.608 [pool-2-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+=======
+17:51:38.461 [pool-2-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+>>>>>>> .r12
+18:29:25.899 [pool-2-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+19:43:51.511 [pool-2-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]

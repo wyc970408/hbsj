@@ -1,0 +1,747 @@
+15:15:02.215 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 3296 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+15:15:02.228 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+15:15:08.132 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+15:15:08.135 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache]
+15:15:11.062 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+15:15:14.064 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+15:15:14.094 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+15:15:14.095 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+15:15:14.122 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener - [log,180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\jdk8\jre\bin;D:/jdk8/bin/../jre/bin/server;D:/jdk8/bin/../jre/bin;D:/jdk8/bin/../jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\jdk8\bin;D:\apache-maven-3.3.9\bin;D:\tortoiseSVN\bin;C:\Users\hqq\AppData\Local\Microsoft\WindowsApps;;D:\eclipse-oxygen;;.]
+15:15:14.506 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+15:15:18.567 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:15:21.340 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+15:15:21.394 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+15:15:21.960 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:15:22.328 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+15:15:22.350 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+15:15:22.426 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 21.14 seconds (JVM running for 22.777)
+15:27:31.746 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 3296 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+15:27:31.747 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+15:27:43.124 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.1' does not yet exist.  Creating now.
+15:27:43.128 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.1]
+15:27:43.998 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+15:27:44.542 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+15:27:44.542 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+15:27:44.543 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+15:27:44.580 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+15:27:46.640 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:27:47.334 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+15:27:47.336 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+15:27:47.548 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:27:47.623 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+15:27:47.625 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+15:27:47.657 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 16.081 seconds (JVM running for 768.008)
+15:29:20.607 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+15:29:20.685 [http-nio-80-exec-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+15:29:20.725 [http-nio-80-exec-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'shiro-activeSessionCache' does not yet exist.  Creating now.
+15:29:20.726 [http-nio-80-exec-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [shiro-activeSessionCache]
+15:29:21.702 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+15:29:21.951 [pool-2-thread-1] INFO  c.a.d.p.DruidDataSource - [init,930] - {dataSource-1} inited
+15:29:22.847 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+15:29:30.512 [pool-3-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+15:39:21.688 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+15:39:21.698 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+15:49:21.688 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+15:49:21.699 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+15:59:21.688 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+15:59:21.708 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+16:09:21.688 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:09:21.702 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+16:11:51.284 [pool-3-thread-5] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:11:55.124 [pool-3-thread-3] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Error][验证码错误]
+16:12:05.497 [pool-3-thread-2] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Error][验证码错误]
+16:12:08.845 [pool-3-thread-4] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Error][验证码错误]
+16:12:15.906 [pool-3-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Error][验证码错误]
+16:14:32.789 [pool-3-thread-5] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Error][验证码错误]
+16:17:38.818 [pool-3-thread-3] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+16:19:21.690 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:19:21.704 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+16:29:21.688 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:29:21.704 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+16:31:18.745 [Thread-12] INFO  c.a.d.p.DruidDataSource - [close,1825] - {dataSource-1} closed
+16:31:19.896 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 3296 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+16:31:19.897 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+16:31:23.342 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.2' does not yet exist.  Creating now.
+16:31:23.345 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.2]
+16:31:24.959 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+16:31:25.432 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+16:31:25.432 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+16:31:25.433 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:31:25.476 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+16:31:26.617 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Stopping service [Tomcat]
+16:31:29.475 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 3296 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+16:31:29.476 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+16:31:31.063 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.3' does not yet exist.  Creating now.
+16:31:31.065 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.3]
+16:31:31.849 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+16:31:32.290 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+16:31:32.291 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+16:31:32.292 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:31:32.334 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+16:31:35.307 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:31:36.164 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+16:31:36.166 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+16:31:36.380 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:31:36.469 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+16:31:36.470 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+16:31:36.510 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 7.144 seconds (JVM running for 4596.862)
+16:31:54.450 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 3296 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+16:31:54.450 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+16:31:56.104 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.4' does not yet exist.  Creating now.
+16:31:56.105 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.4]
+16:31:56.893 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+16:31:57.249 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+16:31:57.250 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+16:31:57.250 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:31:57.276 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+16:32:00.638 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:32:01.601 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+16:32:01.602 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+16:32:01.830 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:32:01.915 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+16:32:01.916 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+16:32:01.930 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 7.583 seconds (JVM running for 4622.282)
+16:32:40.492 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 3296 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+16:32:40.492 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+16:32:42.062 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.5' does not yet exist.  Creating now.
+16:32:42.064 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.5]
+16:32:43.066 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+16:32:43.463 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+16:32:43.463 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+16:32:43.464 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:32:43.484 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+16:32:45.445 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:32:46.251 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+16:32:46.253 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+16:32:46.477 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:32:46.551 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+16:32:46.553 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+16:32:46.606 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 6.202 seconds (JVM running for 4666.958)
+16:32:51.229 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:32:51.245 [http-nio-80-exec-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+16:32:51.248 [http-nio-80-exec-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [shiro-activeSessionCache]
+16:32:51.463 [http-nio-80-exec-2] INFO  c.a.d.p.DruidDataSource - [init,930] - {dataSource-2} inited
+16:32:52.249 [pool-7-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:32:52.260 [pool-7-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+16:33:24.731 [Thread-34] INFO  c.a.d.p.DruidDataSource - [close,1825] - {dataSource-2} closed
+16:33:26.366 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 3296 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+16:33:26.367 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+16:33:27.837 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.6' does not yet exist.  Creating now.
+16:33:27.839 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.6]
+16:33:28.559 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+16:33:29.099 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+16:33:29.099 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+16:33:29.100 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:33:29.148 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+16:33:31.223 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:33:32.021 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+16:33:32.022 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+16:33:32.195 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:33:32.258 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+16:33:32.260 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+16:33:32.307 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 6.016 seconds (JVM running for 4712.659)
+16:33:46.952 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 3296 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+16:33:46.953 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+16:33:48.431 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.7' does not yet exist.  Creating now.
+16:33:48.432 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.7]
+16:33:49.107 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+16:33:49.504 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+16:33:49.504 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+16:33:49.504 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:33:49.525 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+16:33:51.462 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:33:52.486 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+16:33:52.488 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+16:33:52.683 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:33:52.765 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+16:33:52.766 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+16:33:52.782 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 5.897 seconds (JVM running for 4733.134)
+16:36:45.666 [http-nio-80-exec-30] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:36:45.683 [http-nio-80-exec-30] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+16:36:45.686 [http-nio-80-exec-30] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [shiro-activeSessionCache]
+16:36:45.707 [http-nio-80-exec-30] INFO  c.a.d.p.DruidDataSource - [init,930] - {dataSource-3} inited
+16:36:46.686 [pool-10-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:36:46.696 [pool-10-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+16:39:21.688 [pool-2-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:39:21.747 [pool-2-thread-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.8' does not yet exist.  Creating now.
+16:39:21.748 [pool-2-thread-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.8]
+16:39:21.809 [pool-2-thread-1] INFO  o.a.c.l.WebappClassLoaderBase - [log,182] - Illegal access: this web application instance has been stopped already. Could not load [mybatis/]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [mybatis/]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at org.springframework.core.io.ClassPathResource.resolveURL(ClassPathResource.java:155)
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:193)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:495)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:296)
+	at org.mybatis.spring.boot.autoconfigure.MybatisProperties.resolveMapperLocations(MybatisProperties.java:178)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:149)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$833421fd.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$833421fd$$FastClassBySpringCGLIB$$6c064207.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$833421fd.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$ShortcutDependencyDescriptor.resolveShortcut(AutowiredAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.resolvedCachedArgument(AutowiredAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.access$000(AutowiredAnnotationBeanPostProcessor.java:118)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:574)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$ShortcutDependencyDescriptor.resolveShortcut(AutowiredAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.resolvedCachedArgument(AutowiredAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.access$000(AutowiredAnnotationBeanPostProcessor.java:118)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:574)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:943)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:826)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:426)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:397)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:383)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:996)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:338)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:333)
+	at com.uustop.common.utils.spring.SpringUtils.getBean(SpringUtils.java:50)
+	at com.uustop.framework.shiro.web.session.OnlineWebSessionManager.validateSessions(OnlineWebSessionManager.java:93)
+	at com.uustop.framework.shiro.web.session.SpringSessionValidationScheduler$1.run(SpringSessionValidationScheduler.java:107)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+16:41:43.400 [pool-11-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:41:54.178 [pool-11-thread-5] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+16:42:52.247 [pool-7-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:42:52.265 [pool-7-thread-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.9' does not yet exist.  Creating now.
+16:42:52.266 [pool-7-thread-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.9]
+16:42:52.318 [pool-7-thread-1] INFO  o.a.c.l.WebappClassLoaderBase - [log,182] - Illegal access: this web application instance has been stopped already. Could not load [mybatis/]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [mybatis/]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at org.springframework.core.io.ClassPathResource.resolveURL(ClassPathResource.java:155)
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:193)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:495)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:296)
+	at org.mybatis.spring.boot.autoconfigure.MybatisProperties.resolveMapperLocations(MybatisProperties.java:178)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:149)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$833421fd.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$833421fd$$FastClassBySpringCGLIB$$6c064207.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$833421fd.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$ShortcutDependencyDescriptor.resolveShortcut(AutowiredAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.resolvedCachedArgument(AutowiredAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.access$000(AutowiredAnnotationBeanPostProcessor.java:118)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:574)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$ShortcutDependencyDescriptor.resolveShortcut(AutowiredAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.resolvedCachedArgument(AutowiredAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.access$000(AutowiredAnnotationBeanPostProcessor.java:118)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:574)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:943)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:826)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:426)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:397)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:383)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:996)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:338)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:333)
+	at com.uustop.common.utils.spring.SpringUtils.getBean(SpringUtils.java:50)
+	at com.uustop.framework.shiro.web.session.OnlineWebSessionManager.validateSessions(OnlineWebSessionManager.java:93)
+	at com.uustop.framework.shiro.web.session.SpringSessionValidationScheduler$1.run(SpringSessionValidationScheduler.java:107)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+16:45:29.704 [pool-11-thread-4] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:45:34.182 [pool-11-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+16:46:46.687 [pool-10-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:46:46.695 [pool-10-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+16:50:04.952 [pool-11-thread-2] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:50:15.757 [pool-11-thread-4] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[liuchang][Success][登录成功]
+16:51:11.657 [pool-11-thread-5] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[liuchang][Logout][退出成功]
+16:51:21.184 [pool-11-thread-2] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[liuchang][Success][登录成功]
+16:52:16.241 [pool-11-thread-3] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[liuchang][Logout][退出成功]
+16:52:28.489 [pool-11-thread-5] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[liuchang][Error][验证码错误]
+16:52:31.850 [pool-11-thread-2] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[liuchang][Error][验证码错误]
+16:52:34.487 [pool-11-thread-4] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[liuchang][Success][登录成功]
+16:56:46.687 [pool-10-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+16:56:46.694 [pool-10-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+17:06:46.686 [pool-10-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+17:06:46.768 [pool-10-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. [1] sessions were stopped.
+17:11:21.214 [pool-11-thread-4] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[liuchang][Logout][退出成功]
+17:13:20.938 [pool-11-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+17:14:45.204 [pool-11-thread-5] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+17:15:53.927 [pool-11-thread-2] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Error][验证码错误]
+17:16:45.351 [Thread-46] INFO  c.a.d.p.DruidDataSource - [close,1825] - {dataSource-3} closed
+17:16:47.194 [pool-10-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+17:16:47.265 [pool-10-thread-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.10' does not yet exist.  Creating now.
+17:16:47.268 [pool-10-thread-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.10]
+17:16:47.429 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 3296 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+17:16:47.429 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+17:16:48.967 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.11' does not yet exist.  Creating now.
+17:16:48.969 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.11]
+17:16:49.865 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+17:16:50.295 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+17:16:50.296 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+17:16:50.296 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:16:50.320 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+17:16:52.307 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:16:52.900 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+17:16:52.902 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+17:16:53.085 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:16:53.145 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+17:16:53.147 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+17:16:53.166 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 5.863 seconds (JVM running for 7313.518)
+17:17:25.534 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:17:25.552 [http-nio-80-exec-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+17:17:25.554 [http-nio-80-exec-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [shiro-activeSessionCache]
+17:17:26.554 [pool-12-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+17:17:26.567 [pool-12-thread-1] INFO  c.a.d.p.DruidDataSource - [init,930] - {dataSource-4} inited
+17:17:27.141 [pool-12-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+17:17:29.444 [pool-13-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+17:17:38.986 [pool-13-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+17:17:49.791 [Thread-52] INFO  c.a.d.p.DruidDataSource - [close,1825] - {dataSource-4} closed
+17:17:51.182 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 3296 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+17:17:51.182 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+17:17:52.531 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.12' does not yet exist.  Creating now.
+17:17:52.532 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.12]
+17:17:53.064 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+17:17:53.451 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+17:17:53.451 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+17:17:53.451 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:17:53.468 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+17:17:54.978 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:17:55.584 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+17:17:55.586 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+17:17:55.717 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:17:55.818 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+17:17:55.820 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+17:17:55.847 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 4.756 seconds (JVM running for 7376.199)
+17:18:07.335 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:18:07.347 [http-nio-80-exec-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+17:18:07.349 [http-nio-80-exec-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [shiro-activeSessionCache]
+17:18:08.349 [pool-14-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+17:18:08.364 [pool-14-thread-1] INFO  c.a.d.p.DruidDataSource - [init,930] - {dataSource-5} inited
+17:18:08.413 [pool-14-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+17:18:29.489 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 11700 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+17:18:29.499 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+17:18:34.861 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+17:18:34.865 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache]
+17:18:36.903 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+17:18:38.781 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+17:18:38.813 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+17:18:38.814 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:18:38.850 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener - [log,180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\jdk8\jre\bin;D:/jdk8/bin/../jre/bin/server;D:/jdk8/bin/../jre/bin;D:/jdk8/bin/../jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\jdk8\bin;D:\apache-maven-3.3.9\bin;D:\tortoiseSVN\bin;C:\Users\hqq\AppData\Local\Microsoft\WindowsApps;;D:\eclipse-oxygen;;.]
+17:18:39.064 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+17:18:42.925 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:18:45.131 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+17:18:45.174 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+17:18:45.496 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:18:45.844 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+17:18:46.363 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+17:18:46.432 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 17.734 seconds (JVM running for 18.872)
+17:18:55.664 [http-nio-80-exec-30] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:18:55.737 [http-nio-80-exec-30] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+17:18:55.753 [http-nio-80-exec-30] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'shiro-activeSessionCache' does not yet exist.  Creating now.
+17:18:55.756 [http-nio-80-exec-30] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [shiro-activeSessionCache]
+17:18:55.975 [http-nio-80-exec-30] INFO  c.a.d.p.DruidDataSource - [init,930] - {dataSource-1} inited
+17:18:56.741 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+17:18:56.773 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+17:19:03.071 [pool-2-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+17:19:09.063 [pool-2-thread-2] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+17:19:10.135 [pool-2-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+17:19:30.718 [pool-2-thread-2] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+17:19:32.026 [pool-2-thread-4] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+17:28:56.741 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+17:28:56.801 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+17:38:56.741 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+17:38:56.777 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+17:42:45.583 [pool-2-thread-2] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+17:42:54.040 [pool-2-thread-4] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[liuchang][Success][登录成功]
+17:48:56.741 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+17:48:56.749 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+17:58:56.742 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+17:58:56.788 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+18:08:56.741 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+18:08:56.755 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+18:18:56.741 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+18:18:56.785 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+18:28:56.741 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+18:28:56.789 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. [1] sessions were stopped.
+18:38:56.740 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+18:38:56.754 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+18:48:56.741 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+18:48:56.808 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+18:58:56.742 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+18:58:56.759 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+19:08:56.741 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+19:08:56.769 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+19:13:36.718 [pool-2-thread-5] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+19:17:28.142 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 7396 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+19:17:28.157 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+19:17:33.610 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+19:17:33.614 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache]
+19:17:36.438 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+19:17:38.344 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+19:17:38.373 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+19:17:38.374 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+19:17:38.509 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener - [log,180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\jdk8\jre\bin;D:/jdk8/bin/../jre/bin/server;D:/jdk8/bin/../jre/bin;D:/jdk8/bin/../jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\jdk8\bin;D:\apache-maven-3.3.9\bin;D:\tortoiseSVN\bin;C:\Users\hqq\AppData\Local\Microsoft\WindowsApps;;D:\eclipse-oxygen;;.]
+19:17:38.780 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+19:17:46.268 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:17:48.620 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+19:17:48.663 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+19:17:49.010 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:17:49.369 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+19:17:49.773 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+19:17:49.823 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 22.468 seconds (JVM running for 23.566)
+19:17:59.644 [http-nio-80-exec-27] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+19:17:59.738 [http-nio-80-exec-27] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+19:17:59.750 [http-nio-80-exec-27] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'shiro-activeSessionCache' does not yet exist.  Creating now.
+19:17:59.752 [http-nio-80-exec-27] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [shiro-activeSessionCache]
+19:17:59.903 [http-nio-80-exec-27] INFO  c.a.d.p.DruidDataSource - [init,930] - {dataSource-1} inited
+19:18:00.742 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+19:18:00.813 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+19:18:03.343 [pool-2-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+19:19:14.421 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 1636 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+19:19:14.432 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+19:19:19.936 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+19:19:19.941 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache]
+19:19:22.136 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+19:19:24.119 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+19:19:24.149 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+19:19:24.150 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+19:19:24.179 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener - [log,180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\jdk8\jre\bin;D:/jdk8/bin/../jre/bin/server;D:/jdk8/bin/../jre/bin;D:/jdk8/bin/../jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\jdk8\bin;D:\apache-maven-3.3.9\bin;D:\tortoiseSVN\bin;C:\Users\hqq\AppData\Local\Microsoft\WindowsApps;;D:\eclipse-oxygen;;.]
+19:19:24.420 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+19:19:28.580 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:19:30.928 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+19:19:30.972 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+19:19:31.318 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:19:31.704 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+19:19:32.136 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+19:19:32.190 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 18.556 seconds (JVM running for 19.66)
+19:19:46.583 [http-nio-80-exec-4] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+19:19:46.672 [http-nio-80-exec-4] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+19:19:46.680 [http-nio-80-exec-4] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'shiro-activeSessionCache' does not yet exist.  Creating now.
+19:19:46.684 [http-nio-80-exec-4] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [shiro-activeSessionCache]
+19:19:46.847 [http-nio-80-exec-4] INFO  c.a.d.p.DruidDataSource - [init,930] - {dataSource-1} inited
+19:19:47.684 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+19:19:47.698 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+19:19:49.947 [pool-2-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+19:24:16.849 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 4092 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+19:24:16.860 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+19:24:22.375 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
+19:24:22.378 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache]
+19:24:26.001 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+19:24:28.118 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+19:24:28.143 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+19:24:28.144 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+19:24:28.165 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener - [log,180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\jdk8\jre\bin;D:/jdk8/bin/../jre/bin/server;D:/jdk8/bin/../jre/bin;D:/jdk8/bin/../jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\jdk8\bin;D:\apache-maven-3.3.9\bin;D:\tortoiseSVN\bin;C:\Users\hqq\AppData\Local\Microsoft\WindowsApps;;D:\eclipse-oxygen;;.]
+19:24:28.383 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+19:24:32.824 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:24:35.017 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+19:24:35.051 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+19:24:35.409 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:24:35.757 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+19:24:36.166 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+19:24:36.232 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 20.176 seconds (JVM running for 21.312)
+19:24:51.618 [http-nio-80-exec-26] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+19:24:51.712 [http-nio-80-exec-26] INFO  o.a.s.s.m.AbstractValidatingSessionManager - [enableSessionValidation,233] - Enabling session validation scheduler...
+19:24:51.722 [http-nio-80-exec-26] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'shiro-activeSessionCache' does not yet exist.  Creating now.
+19:24:51.724 [http-nio-80-exec-26] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [shiro-activeSessionCache]
+19:24:51.860 [http-nio-80-exec-26] INFO  c.a.d.p.DruidDataSource - [init,930] - {dataSource-1} inited
+19:24:52.714 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+19:24:52.774 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+19:24:56.631 [pool-2-thread-1] INFO  sys-user - [run,108] - [127.0.0.1]内网IP[admin][Success][登录成功]
+19:34:52.715 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+19:34:52.734 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+19:44:52.715 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+19:44:52.728 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+19:54:52.715 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+19:54:52.762 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,145] - Finished invalidation session. No sessions were stopped.
+19:58:40.983 [Thread-8] INFO  c.a.d.p.DruidDataSource - [close,1825] - {dataSource-1} closed
+19:58:41.892 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 4092 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+19:58:41.893 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+19:58:43.847 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.1' does not yet exist.  Creating now.
+19:58:43.849 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.1]
+19:58:45.355 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+19:58:46.005 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+19:58:46.006 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+19:58:46.006 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+19:58:46.042 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+19:58:49.125 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:58:50.215 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+19:58:50.218 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+19:58:50.465 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:58:50.581 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+19:58:50.583 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+19:58:50.603 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 8.848 seconds (JVM running for 2075.683)
+20:00:26.822 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarting,50] - Starting UUSTOPApplication on DESKTOP-2769CBV with PID 4092 (E:\workpace\demo\hbsj\target\classes started by hqq in E:\workpace\demo\hbsj)
+20:00:26.823 [restartedMain] INFO  c.u.UUSTOPApplication - [logStartupProfileInfo,684] - The following profiles are active: druid
+20:00:28.575 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.2' does not yet exist.  Creating now.
+20:00:28.577 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.2]
+20:00:29.860 [restartedMain] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+20:00:30.606 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Initializing ProtocolHandler ["http-nio-80"]
+20:00:30.606 [restartedMain] INFO  o.a.c.c.StandardService - [log,180] - Starting service [Tomcat]
+20:00:30.607 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+20:00:30.665 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - [log,180] - Initializing Spring embedded WebApplicationContext
+20:00:33.595 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+20:00:34.537 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,147] - Context refreshed
+20:00:34.539 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,150] - Found 1 custom documentation plugin(s)
+20:00:34.874 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+20:00:34.994 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,180] - Starting ProtocolHandler ["http-nio-80"]
+20:00:34.996 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,180] - Using a shared selector for servlet write/read
+20:00:35.015 [restartedMain] INFO  c.u.UUSTOPApplication - [logStarted,59] - Started UUSTOPApplication in 8.321 seconds (JVM running for 2180.096)
+20:04:52.715 [pool-1-thread-1] INFO  c.u.f.s.w.s.OnlineWebSessionManager - [validateSessions,86] - invalidation sessions...
+20:04:52.777 [pool-1-thread-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,158] - Cache with name 'com.uustop.framework.shiro.realm.UserRealm.authorizationCache.3' does not yet exist.  Creating now.
+20:04:52.778 [pool-1-thread-1] INFO  o.a.s.c.e.EhCacheManager - [getCache,165] - Added EhCache named [com.uustop.framework.shiro.realm.UserRealm.authorizationCache.3]
+20:04:52.825 [pool-1-thread-1] INFO  o.a.c.l.WebappClassLoaderBase - [log,182] - Illegal access: this web application instance has been stopped already. Could not load [mybatis/]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [mybatis/]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at org.springframework.core.io.ClassPathResource.resolveURL(ClassPathResource.java:155)
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:193)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:495)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:296)
+	at org.mybatis.spring.boot.autoconfigure.MybatisProperties.resolveMapperLocations(MybatisProperties.java:178)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:149)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$48173cdf.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$48173cdf$$FastClassBySpringCGLIB$$d1c27bea.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$48173cdf.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$ShortcutDependencyDescriptor.resolveShortcut(AutowiredAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.resolvedCachedArgument(AutowiredAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.access$000(AutowiredAnnotationBeanPostProcessor.java:118)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:574)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$ShortcutDependencyDescriptor.resolveShortcut(AutowiredAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1074)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.resolvedCachedArgument(AutowiredAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.access$000(AutowiredAnnotationBeanPostProcessor.java:118)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:574)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:943)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:826)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:426)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:397)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:383)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:996)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:338)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:333)
+	at com.uustop.common.utils.spring.SpringUtils.getBean(SpringUtils.java:50)
+	at com.uustop.framework.shiro.web.session.OnlineWebSessionManager.validateSessions(OnlineWebSessionManager.java:93)
+	at com.uustop.framework.shiro.web.session.SpringSessionValidationScheduler$1.run(SpringSessionValidationScheduler.java:107)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

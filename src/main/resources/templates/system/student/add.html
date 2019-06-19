@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" >
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<link th:href="@{/ajax/libs/jquery-ztree/3.5/css/metro/zTreeStyle.css}" rel="stylesheet"/>
+<body class="white-bg">
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+    <form class="form-horizontal m" id="form-student-add">
+        <div class="form-group">
+            <label class="col-sm-3 control-label ">学生学号</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="text" name="studentID" id="studentID"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">姓名</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="text" name="studentName" id="studentName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">性别</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="text" name="studentSex" id="studentSex">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">状态：</label>
+            <div class="col-sm-8">
+                <div class="onoffswitch">
+                    <input type="checkbox" th:checked="true" class="onoffswitch-checkbox" id="status" name="status">
+                    <label class="onoffswitch-label" for="status">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">备注：</label>
+            <div class="col-sm-8">
+                <input id="remark" name="remark" class="form-control" type="text">
+            </div>
+        </div>
+    </form>
+</div>
+<div th:include="include::footer"></div>
+<script th:src="@{/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.all-3.5.js}"></script>
+<script type="text/javascript">
+    $(function() {
+        var url = ctx + "system/menu/studentMenuTreeData";
+        var options = {
+            id: "menuTrees",
+            url: url,
+            check: { enable: true, nocheckInherit: true, chkboxType: { "Y": "ps", "N": "ps" } },
+            expandLevel: 0
+        };
+        $.tree.init(options);
+    });
+
+    $("#form-student-add").validate({
+        rules:{
+            studentID:{
+                required:true,
+                remote: {
+                    url: ctx + "system/student/checkStudentIDUnique",
+                    type: "post",
+                    dataType: "json",
+                    data: {
+                        "studentID" : function() {
+                            return $.common.trim($("#studentID").val());
+                        }
+                    },
+                    dataFilter: function(data, type) {
+                        return $.validate.unique(data);
+                    }
+                }
+            },
+            studentName:{
+                required:true,
+                remote: {
+                    url: ctx + "system/student/checkStudentNameUnique",
+                    type: "post",
+                    dataType: "json",
+                    data: {
+                        "stuName" : function() {
+                            return $.common.trim($("#studentName").val());
+                        }
+                    },
+                    dataFilter: function(data, type) {
+                        return $.validate.unique(data);
+                    }
+                }
+            },
+        },
+        messages: {
+            "studentID": {
+                remote: "角色名称已经存在"
+            },
+            "studentName": {
+                remote: "角色权限已经存在"
+            }
+        }
+    });
+
+    function submitHandler() {
+        if ($.validate.form()) {
+            add();
+        }
+    }
+
+    function add() {
+        var studentId = $("input[name='studentID']").val();
+        var studentName = $("input[name='studentName']").val();
+        var studentSex = $("input[name='studentSex']").val();
+        var status = $("input[name='status']").is(':checked') == true ? 0 : 1;
+        var remark = $("input[name='remark']").val();
+        var menuIds = $.tree.getCheckedNodes();
+        $.ajax({
+            cache : true,
+            type : "POST",
+            url : ctx + "system/student/add",
+            data : {
+                "studentID": studentId,
+                "studentName": studentName,
+                "studentSex": studentSex,
+                "status": status,
+                "remark": remark,
+                "menuIds": menuIds
+            },
+            async : false,
+            error : function(request) {
+                $.modal.alertError("系统错误");
+            },
+            success : function(data) {
+                $.operate.successCallback(data);
+            }
+        });
+    }
+</script>
+</body>
+</html>
