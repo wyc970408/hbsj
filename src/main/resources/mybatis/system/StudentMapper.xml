@@ -7,41 +7,33 @@
     <resultMap type="Student" id="StudentResult">
         <id property="stuId" column="stu_id"/>
         <result property="stuName" column="stu_name"/>
+        <result property="classId" column="classId"/>
+        <result property="className" column="classname"/>
         <result property="stuAge" column="stu_age"/>
         <result property="stuSex" column="stu_sex"/>
-        <result property="stuHead" column="stu_head"/>
-        <result property="stuJob" column="stu_job"/>
-        <result property="stuRank" column="stu_rank"/>
-        <result property="stuScroe" column="stu_scroe"/>
-        <result property="stuApp" column="stu_app"/>
-        <result property="appID" column="app_id"/>
-        <result property="appName" column="app_name"/>
-        <result property="scId" column="sc_id"/>
-        <result property="scClaname" column="sc_claname"/>
         <result property="status" column="status"/>
         <result property="delFlag" column="del_flag"/>
-        <result property="createBy" column="create_by"/>
-        <result property="dateTime" column="create_time"/>
-        <result property="updateBy" column="update_by"/>
-        <result property="updateTime" column="update_time"/>
     </resultMap>
 
     <sql id="selectStudentContactVo">
-        select distinct s.stu_id,s.stu_name,s.stu_age,s.stu_sex,s.status,s.create_time from sys_student s
+        select distinct s.stu_id,s.stu_name,s.stu_age,s.stu_sex,s.status,s.del_flag
+        from sys_studentinfo s
     </sql>
 
     <sql id="selectStudentVo">
-		select s.stu_id, s.stu_name, s.stu_age, s.stu_sex,s.stu_head,s.stu_job,s.stu_rank,s.stu_scroe,s.status,s.create_time,
+		selects.stu_id,s.stu_name,s.stu_age,s.stu_sex,s.status,s.del_flag
         from sys_student s
 	</sql>
 
     <select id="selectStudentList" parameterType="Student" resultMap="StudentResult">
         <include refid="selectStudentContactVo"/>
-       where s.del_flag = '0'
+        where s.del_flag = '0'
+        <if test="stuName !=null and stuName !=''">
+            and r.stu_name like concat('%',#{stuName},'%')
+        </if>
         <if test="status != null and status != ''">
             AND s.status = #{status}
         </if>
-        <!-- 数据范围过滤 -->
 
     </select>
 
@@ -49,5 +41,11 @@
         <include refid="selectStudentContactVo"/>
         where s.del_flag='0' and s.stu_id=#{stuId}
     </select>
+    
+    <insert id="insertStudent" parameterType="Student">
+        insert into sys_studentinfo(
+
+        )
+    </insert>
 
 </mapper> 

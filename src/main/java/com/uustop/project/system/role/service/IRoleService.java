@@ -11,6 +11,7 @@ import com.uustop.project.system.role.domain.Role;
  */
 public interface IRoleService
 {
+
     /**
      * 根据条件分页查询角色数据
      * 

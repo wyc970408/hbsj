@@ -1,6 +1,6 @@
-package com.uustop.project.system.studentclass.service;
+package com.uustop.project.system.stucla.service;
 import com.uustop.project.system.role.domain.Role;
-import com.uustop.project.system.studentclass.domain.StuCla;
+import com.uustop.project.system.stucla.domain.StuCla;
 
 
 import java.util.List;
@@ -12,8 +12,7 @@ public interface IStuClaService {
 
     public List<Map<String,Object>>selectStuClaTree();
 
-
-    public List<Map>roleStuClaTreeDate(Role role);
+    public List<Map<String,Object>>roleStuClaTreeData(Role role);
 
     public int selectStuClaCount(int parentId);
 

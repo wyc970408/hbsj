@@ -1,16 +1,5 @@
 package com.uustop.project.system.dept.controller;
 
-import java.util.List;
-import java.util.Map;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import com.uustop.common.utils.StringUtils;
 import com.uustop.framework.aspectj.lang.annotation.Log;
 import com.uustop.framework.aspectj.lang.enums.BusinessType;
@@ -19,16 +8,23 @@ import com.uustop.framework.web.domain.AjaxResult;
 import com.uustop.project.system.dept.domain.Dept;
 import com.uustop.project.system.dept.service.IDeptService;
 import com.uustop.project.system.role.domain.Role;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * 部门信息
- * 
+ *
  * @author uustop
  */
 @Controller
 @RequestMapping("/system/dept")
-public class DeptController extends BaseController
-{
+public class DeptController extends BaseController {
     private String prefix = "system/dept";
 
     @Autowired
@@ -36,16 +32,14 @@ public class DeptController extends BaseController
 
     @RequiresPermissions("system:dept:view")
     @GetMapping()
-    public String dept()
-    {
+    public String dept() {
         return prefix + "/dept";
     }
 
     @RequiresPermissions("system:dept:list")
     @GetMapping("/list")
     @ResponseBody
-    public List<Dept> list(Dept dept)
-    {
+    public List<Dept> list(Dept dept) {
         List<Dept> deptList = deptService.selectDeptList(dept);
         return deptList;
     }
@@ -54,8 +48,7 @@ public class DeptController extends BaseController
      * 新增部门
      */
     @GetMapping("/add/{parentId}")
-    public String add(@PathVariable("parentId") Long parentId, ModelMap mmap)
-    {
+    public String add(@PathVariable("parentId") Long parentId, ModelMap mmap) {
         mmap.put("dept", deptService.selectDeptById(parentId));
         return prefix + "/add";
     }
@@ -67,8 +60,7 @@ public class DeptController extends BaseController
     @RequiresPermissions("system:dept:add")
     @PostMapping("/add")
     @ResponseBody
-    public AjaxResult addSave(Dept dept)
-    {
+    public AjaxResult addSave(Dept dept) {
         return toAjax(deptService.insertDept(dept));
     }
 
@@ -76,11 +68,9 @@ public class DeptController extends BaseController
      * 修改
      */
     @GetMapping("/edit/{deptId}")
-    public String edit(@PathVariable("deptId") Long deptId, ModelMap mmap)
-    {
+    public String edit(@PathVariable("deptId") Long deptId, ModelMap mmap) {
         Dept dept = deptService.selectDeptById(deptId);
-        if (StringUtils.isNotNull(dept) && 100L == deptId)
-        {
+        if (StringUtils.isNotNull(dept) && 100L == deptId) {
             dept.setParentName("无");
         }
         mmap.put("dept", dept);
@@ -94,8 +84,7 @@ public class DeptController extends BaseController
     @RequiresPermissions("system:dept:edit")
     @PostMapping("/edit")
     @ResponseBody
-    public AjaxResult editSave(Dept dept)
-    {
+    public AjaxResult editSave(Dept dept) {
         return toAjax(deptService.updateDept(dept));
     }
 
@@ -106,14 +95,11 @@ public class DeptController extends BaseController
     @RequiresPermissions("system:dept:remove")
     @PostMapping("/remove/{deptId}")
     @ResponseBody
-    public AjaxResult remove(@PathVariable("deptId") Long deptId)
-    {
-        if (deptService.selectDeptCount(deptId) > 0)
-        {
+    public AjaxResult remove(@PathVariable("deptId") Long deptId) {
+        if (deptService.selectDeptCount(deptId) > 0) {
             return error(1, "存在下级部门,不允许删除");
         }
-        if (deptService.checkDeptExistUser(deptId))
-        {
+        if (deptService.checkDeptExistUser(deptId)) {
             return error(1, "部门存在用户,不允许删除");
         }
         return toAjax(deptService.deleteDeptById(deptId));
@@ -124,8 +110,7 @@ public class DeptController extends BaseController
      */
     @PostMapping("/checkDeptNameUnique")
     @ResponseBody
-    public String checkDeptNameUnique(Dept dept)
-    {
+    public String checkDeptNameUnique(Dept dept) {
         return deptService.checkDeptNameUnique(dept);
     }
 
@@ -133,8 +118,7 @@ public class DeptController extends BaseController
      * 选择部门树
      */
     @GetMapping("/selectDeptTree/{deptId}")
-    public String selectDeptTree(@PathVariable("deptId") Long deptId, ModelMap mmap)
-    {
+    public String selectDeptTree(@PathVariable("deptId") Long deptId, ModelMap mmap) {
         mmap.put("dept", deptService.selectDeptById(deptId));
         return prefix + "/tree";
     }
@@ -144,8 +128,7 @@ public class DeptController extends BaseController
      */
     @GetMapping("/treeData")
     @ResponseBody
-    public List<Map<String, Object>> treeData()
-    {
+    public List<Map<String, Object>> treeData() {
         List<Map<String, Object>> tree = deptService.selectDeptTree();
         return tree;
     }
@@ -155,8 +138,7 @@ public class DeptController extends BaseController
      */
     @GetMapping("/roleDeptTreeData")
     @ResponseBody
-    public List<Map<String, Object>> deptTreeData(Role role)
-    {
+    public List<Map<String, Object>> deptTreeData(Role role) {
         List<Map<String, Object>> tree = deptService.roleDeptTreeData(role);
         return tree;
     }

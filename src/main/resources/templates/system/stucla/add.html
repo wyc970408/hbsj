@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+    <form class="form-horizontal m" id="form-stucla-add">
+        <input id="treeId" name="parentId" type="hidden" th:value="${stucla.claId}"/>
+        <div class="form-group">
+            <label class="col-sm-3 control-label ">年级：</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="text" onclick="selectStuClaTree()" id="treeName" readonly="true"
+                       th:value="${stucla.className}"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">班级名称</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="text" name="className" id="className">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">显示排序</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="text" name="orderNum" id="orderNum">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">班级状态：</label>
+            <div class="col-sm-8">
+                <div class="radio-box" th:each="dict : ${@dict.getType('sys_normal_disable')}">
+                    <input type="radio" th:id="${dict.dictCode}" name="status" th:value="${dict.dictValue}"
+                           th:checked="${dict.isDefault == 'Y' ? true : false}">
+                    <label th:for="${dict.dictCode}" th:text="${dict.dictLabel}"></label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div th:include="include::footer"></div>
+<script type="text/javascript">
+    var prefix = ctx + "system/stucla";
+    $("form-stucla-add").validate({
+        rules: {
+            className: {
+                required: true,
+                remote: {
+                    url: prefix + "/checkStuClaNameUnique",
+                    type: "post",
+                    dataType: "json",
+                    data: {
+                        "parentId": function () {
+                            return $("input[name='parentId']").val();
+                        },
+                        "className": function () {
+                            return $.common.trim($("#className").val());
+                        }
+                    },
+                    dataFilter: function (data,type) {
+                        return $.validate.unique(data);
+                    }
+                },
+                orderNum: {
+                    required: true,
+                    digits: true
+                }
+            }
+        },
+        messages: {
+            "className": {
+                remote: "班级已存在"
+            }
+        }
+    });
+
+    function submitHandler() {
+        if ($.validate.form()) {
+            $.operate.save(prefix + "/add", $('#form-stucla-add').serialize());
+        }
+    }
+
+    function selectStuClaTree() {
+        var options = {
+            title: '班级选择',
+            width: "380",
+            url: prefix + "/selectStuClaTree/" + $("#treeId").val(),
+            callBack: doSubmit
+        };
+        $.modal.openOptions(options);
+    }
+
+    function doSubmit(index, layero) {
+        var body = layer.getChildFrame('body', index);
+        $("#treeId").val(body.find('#treeId').val());
+        $("#treeName").val(body.find('#treeName').val());
+        layer.close(index);
+    }
+</script>
+</body>
+</html>

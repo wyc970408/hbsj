@@ -4,20 +4,20 @@
 <head th:include="include :: header"></head>
 <body class="white-bg">
 <div class="wrapper wrapper-content animated fadeInRight ibox-content">
-    <form class="form-horizontal m" id="form-dept-edit" th:object="${dept}">
-        <input name="deptId" type="hidden" th:field="*{deptId}"/>
+    <form class="form-horizontal m" id="form-stucla-edit" th:object="${stucla}">
+        <input name="claId" type="hidden" th:field="*{claId}"/>
         <input id="treeId" name="parentId" type="hidden" th:field="*{parentId}"/>
         <div class="form-group">
-            <label class="col-sm-3 control-label ">上级部门：</label>
+            <label class="col-sm-3 control-label ">年级：</label>
             <div class="col-sm-8">
-                <input class="form-control" type="text" id="treeName" onclick="selectDeptTree()" readonly="true"
+                <input class="form-control" type="text" id="treeName" onclick="selectStuClaTree()" readonly="true"
                        th:field="*{parentName}"/>
             </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-3 control-label">部门名称：</label>
+            <label class="col-sm-3 control-label">班级名称：</label>
             <div class="col-sm-8">
-                <input class="form-control" type="text" name="deptName" th:field="*{deptName}" id="deptName">
+                <input class="form-control" type="text" name="className" th:field="*{className}" id="className">
             </div>
         </div>
         <div class="form-group">
@@ -27,25 +27,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-3 control-label">负责人：</label>
-            <div class="col-sm-8">
-                <input class="form-control" type="text" name="leader" th:field="*{leader}">
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="col-sm-3 control-label">联系电话：</label>
-            <div class="col-sm-8">
-                <input class="form-control" type="text" name="phone" th:field="*{phone}">
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="col-sm-3 control-label">邮箱：</label>
-            <div class="col-sm-8">
-                <input class="form-control" type="text" name="email" th:field="*{email}">
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="col-sm-3 control-label">部门状态：</label>
+            <label class="col-sm-3 control-label">班级状态：</label>
             <div class="col-sm-8">
                 <div class="radio-box" th:each="dict : ${@dict.getType('sys_normal_disable')}">
                     <input type="radio" th:id="${dict.dictCode}" name="status" th:value="${dict.dictValue}"
@@ -58,25 +40,25 @@
 </div>
 <div th:include="include::footer"></div>
 <script type="text/javascript">
-    var prefix = ctx + "system/dept";
+    var prefix = ctx + "system/stucla";
 
-    $("#form-dept-edit").validate({
+    $("#form-stucla-edit").validate({
         rules: {
-            deptName: {
+            className: {
                 required: true,
                 remote: {
-                    url: prefix + "/checkDeptNameUnique",
+                    url: prefix + "/checkStuClaNameUnique",
                     type: "post",
                     dataType: "json",
                     data: {
-                        "deptId": function () {
-                            return $("#deptId").val();
+                        "claId": function () {
+                            return $("#claId").val();
                         },
                         "parentId": function () {
                             return $("input[name='parentId']").val();
                         },
-                        "deptName": function () {
-                            return $.common.trim($("#deptName").val());
+                        "className": function () {
+                            return $.common.trim($("#className").val());
                         }
                     },
                     dataFilter: function (data, type) {
@@ -88,39 +70,33 @@
                 required: true,
                 digits: true
             },
-            email: {
-                email: true,
-            },
-            phone: {
-                isPhone: true,
-            },
         },
         messages: {
-            "deptName": {
-                remote: "部门已经存在"
+            "className": {
+                remote: "班级已经存在"
             }
         }
     });
 
     function submitHandler() {
         if ($.validate.form()) {
-            $.operate.save(prefix + "/edit", $('#form-dept-edit').serialize());
+            $.operate.save(prefix + "/edit", $('#form-stucla-edit').serialize());
         }
     }
 
     /*部门管理-修改-选择部门树*/
-    function selectDeptTree() {
-        var deptId = $("#treeId").val();
-        if (deptId > 0) {
+    function selectStuClaTree() {
+        var classId = $("#treeId").val();
+        if (classId > 0) {
             var options = {
-                title: '部门选择',
+                title: '年级选择',
                 width: "380",
-                url: prefix + "/selectDeptTree/" + $("#treeId").val(),
+                url: prefix + "/selectStuClaTree/" + $("#treeId").val(),
                 callBack: doSubmit
             };
             $.modal.openOptions(options);
         } else {
-            $.modal.alertError("父部门不能选择");
+            $.modal.alertError("年级不能选择");
         }
     }
 

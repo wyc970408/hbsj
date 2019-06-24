@@ -18,16 +18,13 @@
                             姓名：<input type="text" name="stuName"/>
                         </li>
                         <li>
+                            班级：<input type="text"name="classId">
+                        </li>
+                        <li>
                             状态：<select name="status" th:with="type=${@dict.getType('sys_normal_disable')}">
                             <option value="">所有</option>
                             <option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}"></option>
                         </select>
-                        </li>
-                        <li class="select-time">
-                            <label>创建时间： </label>
-                            <input type="text" class="time-input" id="startTime" placeholder="开始时间" name="params[beginTime]"/>
-                            <span>-</span>
-                            <input type="text" class="time-input" id="endTime" placeholder="结束时间" name="params[endTime]"/>
                         </li>
                         <li>
                             <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
@@ -48,9 +45,9 @@
             <a class="btn btn-danger btn-del disabled" onclick="$.operate.removeAll()" shiro:hasPermission="system:student:remove">
                 <i class="fa fa-remove"></i> 删除
             </a>
-            <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="system:student:export">
+            <!--<a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="system:student:export">
                 <i class="fa fa-download"></i> 导出
-            </a>
+            </a>-->
         </div>
 
         <div class="col-sm-12 select-table table-striped">
@@ -89,6 +86,11 @@
                     sortable: true
                 },
                 {
+                    field:"className",
+                    title:'班级',
+                    sortable:true
+                },
+                {
                     field: 'stuAge',
                     title: '年龄',
                     sortable: true
@@ -105,11 +107,6 @@
                     formatter: function(value, row, index) {
                         return $.table.selectDictLabel(datas, value);
                     }
-                },
-                {
-                    field: 'createTime',
-                    title: '创建时间',
-                    sortable: true
                 }]
         };
         $.table.init(options);

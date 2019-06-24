@@ -7,32 +7,41 @@
 <div class="wrapper wrapper-content animated fadeInRight ibox-content">
     <form class="form-horizontal m" id="form-student-add">
         <div class="form-group">
+        <label class="col-sm-3 control-label ">年级：</label>
+        <div class="col-sm-8">
+            <input class="form-control" type="text" id="treeName" onclick="selectStuClaTree()" readonly="true"
+                   th:field="*{parentName}"/>
+        </div>
+</div>
+        <div class="form-group">
             <label class="col-sm-3 control-label ">学生学号</label>
             <div class="col-sm-8">
-                <input class="form-control" type="text" name="studentID" id="studentID"/>
+                <input class="form-control" type="text" name="stuId" id="stuId"/>
             </div>
         </div>
         <div class="form-group">
             <label class="col-sm-3 control-label">姓名</label>
             <div class="col-sm-8">
-                <input class="form-control" type="text" name="studentName" id="studentName">
+                <input class="form-control" type="text" name="stuName" id="stuName">
             </div>
         </div>
         <div class="form-group">
             <label class="col-sm-3 control-label">性别</label>
             <div class="col-sm-8">
-                <input class="form-control" type="text" name="studentSex" id="studentSex">
-            </div>
+                <div class="radio-box" th:each="dict : ${@dict.getType('sys_user_sex')}">
+                    <input type="radio" th:id="${dict.dictCode}" name="stuSex" th:value="${dict.dictValue}"
+                           th:checked="${dict.isDefault == 'Y' ? true : false}">
+                    <label th:for="${dict.dictCode}" th:text="${dict.dictLabel}"></label>
+                </div>
+        </div>
         </div>
         <div class="form-group">
             <label class="col-sm-3 control-label">状态：</label>
             <div class="col-sm-8">
-                <div class="onoffswitch">
-                    <input type="checkbox" th:checked="true" class="onoffswitch-checkbox" id="status" name="status">
-                    <label class="onoffswitch-label" for="status">
-                        <span class="onoffswitch-inner"></span>
-                        <span class="onoffswitch-switch"></span>
-                    </label>
+                <div class="radio-box" th:each="dict : ${@dict.getType('sys_student_status')}">
+                    <input type="radio" th:id="${dict.dictCode}" name="status" th:value="${dict.dictValue}"
+                           th:checked="${dict.isDefault == 'Y' ? true : false}">
+                    <label th:for="${dict.dictCode}" th:text="${dict.dictLabel}"></label>
                 </div>
             </div>
         </div>
@@ -47,62 +56,7 @@
 <div th:include="include::footer"></div>
 <script th:src="@{/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.all-3.5.js}"></script>
 <script type="text/javascript">
-    $(function() {
-        var url = ctx + "system/menu/studentMenuTreeData";
-        var options = {
-            id: "menuTrees",
-            url: url,
-            check: { enable: true, nocheckInherit: true, chkboxType: { "Y": "ps", "N": "ps" } },
-            expandLevel: 0
-        };
-        $.tree.init(options);
-    });
-
-    $("#form-student-add").validate({
-        rules:{
-            studentID:{
-                required:true,
-                remote: {
-                    url: ctx + "system/student/checkStudentIDUnique",
-                    type: "post",
-                    dataType: "json",
-                    data: {
-                        "studentID" : function() {
-                            return $.common.trim($("#studentID").val());
-                        }
-                    },
-                    dataFilter: function(data, type) {
-                        return $.validate.unique(data);
-                    }
-                }
-            },
-            studentName:{
-                required:true,
-                remote: {
-                    url: ctx + "system/student/checkStudentNameUnique",
-                    type: "post",
-                    dataType: "json",
-                    data: {
-                        "stuName" : function() {
-                            return $.common.trim($("#studentName").val());
-                        }
-                    },
-                    dataFilter: function(data, type) {
-                        return $.validate.unique(data);
-                    }
-                }
-            },
-        },
-        messages: {
-            "studentID": {
-                remote: "角色名称已经存在"
-            },
-            "studentName": {
-                remote: "角色权限已经存在"
-            }
-        }
-    });
-
+var type="text/javascript"
     function submitHandler() {
         if ($.validate.form()) {
             add();
@@ -110,12 +64,10 @@
     }
 
     function add() {
-        var studentId = $("input[name='studentID']").val();
-        var studentName = $("input[name='studentName']").val();
-        var studentSex = $("input[name='studentSex']").val();
+        var studentId = $("input[name='stuId']").val();
+        var studentName = $("input[name='stuName']").val();
+        var studentSex = $("input[name='stuSex']").val();
         var status = $("input[name='status']").is(':checked') == true ? 0 : 1;
-        var remark = $("input[name='remark']").val();
-        var menuIds = $.tree.getCheckedNodes();
         $.ajax({
             cache : true,
             type : "POST",
@@ -125,8 +77,6 @@
                 "studentName": studentName,
                 "studentSex": studentSex,
                 "status": status,
-                "remark": remark,
-                "menuIds": menuIds
             },
             async : false,
             error : function(request) {

@@ -13,12 +13,18 @@ public interface StudentMapper {
     public List<Student> selectStudentList(Student student);
 
     /**
-     * 根据查询学生信息
-     * @param studentID
+     * 通过班级查询学生
+     * @param classId
      * @return
      */
-    public List<Student> selectStudentByID(int studentID);
+    public List<Student> selectStudentByClassID(int classId);
 
+    /**
+     * 根据学号查询学生信息
+     * @param stuId
+     * @return
+     */
+    public List<Student>selectStudentByID(int stuId);
     /**
      * 根据学号删除用户信息
      * @param studentID 需要删除的ID
@@ -26,6 +32,13 @@ public interface StudentMapper {
      */
     public int deleteStudentByID(int studentID);
 
+
+    /**
+     * 批量删除
+     * @param ids
+     * @return
+     */
+    public int deleteStudentByIds(int[] ids);
     /**
      * 更新学生信息
      * @param student
@@ -39,6 +52,4 @@ public interface StudentMapper {
      * @return
      */
     public int insertStudent(Student student);
-
-
 }

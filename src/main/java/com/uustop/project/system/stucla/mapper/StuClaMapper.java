@@ -1,7 +1,6 @@
-package com.uustop.project.system.studentclass.mapper;
+package com.uustop.project.system.stucla.mapper;
 
-import com.uustop.project.system.dept.domain.Dept;
-import com.uustop.project.system.studentclass.domain.StuCla;
+import com.uustop.project.system.stucla.domain.StuCla;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -22,11 +21,24 @@ public interface StuClaMapper {
      */
     public int checkClassExistUser(int claId);
 
+    /**
+     * 查询班级信息
+     * @param stuCla
+     * @return
+     */
+
     public List<StuCla>selectClaList(StuCla stuCla);
+
+    /**
+     * 删除班级信息
+     * @param claId
+     * @return
+     */
 
     public int deleteClaById(int claId);
 
-    public int inserCla(StuCla stuCla);
+
+    public int insertCla(StuCla stuCla);
 
     public int updateCla(StuCla stuCla);
 

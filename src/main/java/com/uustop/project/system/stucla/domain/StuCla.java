@@ -1,4 +1,4 @@
-package com.uustop.project.system.studentclass.domain;
+package com.uustop.project.system.stucla.domain;
 
 import com.uustop.framework.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -20,6 +20,15 @@ public class StuCla extends BaseEntity {
     private String status;
     /**删除标志（0代表存在 2代表删除*/
     private String delFlag;
+    private String parentName;
+
+    public String getParentName() {
+        return parentName;
+    }
+
+    public void setParentName(String parentName) {
+        this.parentName = parentName;
+    }
 
     public static long getSeriaVersionUID() {
         return seriaVersionUID;

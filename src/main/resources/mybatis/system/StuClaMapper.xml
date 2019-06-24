@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uustop.project.system.stucla.mapper.StuClaMapper">
+
+    <resultMap type="StuCla" id="StuClaResult">
+        <id property="claId" column="classId"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="ancestros" column="ancestros"/>
+        <result property="className" column="classname"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="status" column="status"/>
+        <result property="delFlag" column="del_flag"/>
+    </resultMap>
+
+    <sql id="selectStuClaVo">
+        select s.classId,s.parent_id,s.ancestros,s.classname,s.order_num,s.status,s.del_flag
+        from sys_stucla s
+    </sql>
+
+    <select id="selectStuClaTree" parameterType="int" resultType="String">
+        select concat(s.classId,s.classname) as stucla_name
+        from sys_stucla s
+        left join sys_role_stucla rs on s.classId=rs.stucla_id
+        where s.del_flag='0' and rs.role_id=#{roleId}
+        order by s.parent_id,s.order_num
+    </select>
+
+    <select id="selectClassCount" parameterType="StuCla" resultType="int">
+        select count(1) from sys_stucla
+        where del_flag='0'
+        <if test="claId !=null and claId !=0">and classId= #{claId}</if>
+        <if test="parentId !=null and parentId != 0">and parent_id=${parentId}</if>
+    </select>
+
+    <select id="selectClaList" parameterType="StuCla" resultMap="StuClaResult">
+        <include refid="selectStuClaVo"/>
+        where s.del_flag='0'
+        <if test="parentId !=null and parentId !=0">
+            and parent_id=#{parentId}
+        </if>
+        <if test="className !=null and className !=''">
+            and classname like concat('%',#{className},'%')
+        </if>
+        <if test="status !=null and status !=''">
+            and status=#{status}
+        </if>
+        order by s.parent_id,s.order_num
+        ${params.dataScope}
+    </select>
+
+    <select id="checkClassExistUser" parameterType="int" resultType="int">
+        select count(1)from sys_studentinfo where classId=#{claId} and del_flag='0'
+    </select>
+
+    <select id="selectClaById" parameterType="int" resultMap="StuClaResult">
+        select s.classId,s.parent_id,s.ancestros,s.classname,s.order_num,s.status,s.del_flag
+        from sys_stucla s
+        where s.classId=#{claId}
+    </select>
+
+        <select id="checkClaNameUnique" resultMap="StuClaResult">
+        <include refid="selectStuClaVo"/>
+        where classname=#{className} and parent_id=#{parentId}
+    </select>
+
+    <insert id="insertCla" parameterType="StuCla">
+        insert into sys_stucla(
+        <if test="claId !=null and claId != 0">classId,</if>
+        <if test="parentId !=null and parentId != 0">parent_id,</if>
+        <if test="className !=null and className != ''">classname,</if>
+        <if test="ancestros !=null and ancestros !=''">ancestros,</if>
+        <if test="orderNum !=null and orderNum !=''">order_num,</if>
+        <if test="status !=null">status</if>
+        )values(
+        <if test="claId !=null and claId != 0">#{claId},</if>
+        <if test="parentId !=null and parentId != 0">${parentId},</if>
+        <if test="className !=null and className != ''">'${className}',</if>
+        <if test="ancestros !=null and ancestros !=''">'${ancestros}',</if>
+        <if test="orderNum !=null and orderNum !=''">${orderNum},</if>
+        <if test="status !=null">${status}</if>
+        )
+    </insert>
+
+    <update id="updateCla" parameterType="StuCla">
+        update sys_stucla
+        <set>
+            <if test="parentId !=null and parentId !=0">parent_id=#{parentId},</if>
+            <if test="className !=null and className !=''">classname=#{className},</if>
+            <if test="ancestros !=null and ancestros !=''">ancestros=#{ancestros},</if>
+            <if test="orderNum !=null and orderNum !=''">order_num=#{orderNum},</if>
+            <if test="status !=null and status !=''">status=#{status}</if>
+        </set>
+        where classId=#{claId}
+    </update>
+
+    <update id="updateClaStudent" parameterType="java.util.List">
+        update sys_stucla set ancestros =
+        <foreach collection="clas" item="item" index="index"
+                 separator=" " open="case classId" close="end">
+            when #{item.claId} then #{item.ancestros}
+        </foreach>
+        where classId in
+        <foreach collection="clas" item="item" index="index"
+                 separator="," open="(" close=")">
+            #{item.claId}
+        </foreach>
+    </update>
+
+    <delete id="deleteClaById" parameterType="int">
+        update sys_stucla set del_flag="1" where classId=#{claId}
+    </delete>
+
+
+</mapper>

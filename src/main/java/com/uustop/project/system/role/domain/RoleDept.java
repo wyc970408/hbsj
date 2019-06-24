@@ -39,8 +39,8 @@ public class RoleDept
     @Override
     public String toString() {
         return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
-            .append("roleId", getRoleId())
-            .append("deptId", getDeptId())
-            .toString();
+                .append("roleId", getRoleId())
+                .append("deptId", getDeptId())
+                .toString();
     }
 }

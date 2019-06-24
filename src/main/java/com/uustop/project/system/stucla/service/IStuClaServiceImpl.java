@@ -1,11 +1,12 @@
-package com.uustop.project.system.studentclass.service;
+package com.uustop.project.system.stucla.service;
 
 import com.uustop.common.constant.UserConstants;
 import com.uustop.common.utils.StringUtils;
+import com.uustop.common.utils.security.ShiroUtils;
 import com.uustop.framework.aspectj.lang.annotation.DataScope;
 import com.uustop.project.system.role.domain.Role;
-import com.uustop.project.system.studentclass.domain.StuCla;
-import com.uustop.project.system.studentclass.mapper.StuClaMapper;
+import com.uustop.project.system.stucla.domain.StuCla;
+import com.uustop.project.system.stucla.mapper.StuClaMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -117,12 +118,49 @@ public class IStuClaServiceImpl implements IStuClaService{
 
     @Override
     public int insertStuCla(StuCla stuCla){
-        int parentId = stuCla.getParentId();
-        StuCla info=stuClaMapper.selectClaById(parentId);
-
+        StuCla info=stuClaMapper.selectClaById(stuCla.getParentId());
         stuCla.setAncestros(info.getAncestros()+","+stuCla.getParentId());
-            return 1;
+        return stuClaMapper.insertCla(stuCla);
     }
+
+    @Override
+    public int updateStuCla(StuCla stuCla){
+        StuCla info=stuClaMapper.selectClaById(stuCla.getParentId());
+        if(StringUtils.isNotNull(info)){
+            String ancestors=info.getAncestros()+","+stuCla.getParentId();
+            stuCla.setAncestros(ancestors);
+            updateStuClaChildren(stuCla.getClaId(),ancestors);
+        }
+        stuCla.setUpdateBy(ShiroUtils.getLoginName());
+        return stuClaMapper.updateCla(stuCla);
+    }
+
+    public void updateStuClaChildren(int stuclaId,String ancestors) {
+        StuCla stuCla=new StuCla();
+        stuCla.setParentId(stuclaId);
+        List<StuCla>childrens=stuClaMapper.selectClaList(stuCla);
+        for (StuCla children:childrens){
+            children.setAncestros(ancestors+","+stuCla.getParentId());
+        }
+        if (childrens.size()>0){
+            stuClaMapper.updateClaStudent(childrens);
+        }
+    }
+
+
+    public StuCla selectStuClaById(int stuClaId){
+        return stuClaMapper.selectClaById(stuClaId);
+    }
+
+    public String checkStuClaNameUnique(StuCla stuCla){
+        Long stuclaId=StringUtils.isNull(stuCla.getClaId())?-1L:stuCla.getClaId();
+        StuCla info=stuClaMapper.checkClaNameUnique(stuCla.getClassName(),stuCla.getParentId());
+        if (StringUtils.isNotNull(info)&&info.getClaId()!=stuclaId.longValue()){
+            return UserConstants.DEPT_NAME_NOT_UNIQUE;
+        }
+        return UserConstants.DEPT_NAME_UNIQUE;
+    }
+
 
 
 }

@@ -19,11 +19,11 @@ public interface IStudentService {
     public List<Student> selectStudentByID(int studentID);
 
     /**
-     * 根据学生ID查询学生
-     * @param studentID
+     * 通过班级查询学生
+     * @param classId
      * @return
      */
-
+    public List<Student>selectStudentByClassId(int classId);
     /**
      * 通过学生ID删除学生
      * @param studentID
