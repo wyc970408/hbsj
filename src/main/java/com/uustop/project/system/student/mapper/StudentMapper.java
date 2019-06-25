@@ -2,6 +2,7 @@ package com.uustop.project.system.student.mapper;
 
 import com.uustop.project.system.student.domain.Student;
 
+import javax.print.DocFlavor;
 import java.util.List;
 
 public interface StudentMapper {
@@ -17,28 +18,23 @@ public interface StudentMapper {
      * @param classId
      * @return
      */
-    public List<Student> selectStudentByClassID(int classId);
+    public List<Student> selectStudentByClassID(Integer classId);
 
     /**
      * 根据学号查询学生信息
      * @param stuId
      * @return
      */
-    public List<Student>selectStudentByID(int stuId);
+    public Student selectStudentByID(Integer stuId);
     /**
      * 根据学号删除用户信息
      * @param studentID 需要删除的ID
      * @return
      */
-    public int deleteStudentByID(int studentID);
+    public int deleteStudentByID(Integer studentID);
 
+    public int deleteStudentByIds(Long[] ids);
 
-    /**
-     * 批量删除
-     * @param ids
-     * @return
-     */
-    public int deleteStudentByIds(int[] ids);
     /**
      * 更新学生信息
      * @param student
@@ -52,4 +48,6 @@ public interface StudentMapper {
      * @return
      */
     public int insertStudent(Student student);
+
+    public Student checkPhone(String phone);
 }

@@ -16,20 +16,22 @@ public interface IStudentService {
      * @param studentID
      * @return
      */
-    public List<Student> selectStudentByID(int studentID);
+    public Student selectStudentByID(int studentID);
 
     /**
      * 通过班级查询学生
      * @param classId
      * @return
      */
-    public List<Student>selectStudentByClassId(int classId);
+    public List<Student>selectStudentByClassId(Integer classId);
     /**
      * 通过学生ID删除学生
      * @param studentID
      * @return
      */
-    public int deleteStudentByID(int studentID);
+    public int deleteStudentByID(Integer studentID);
+
+    public int deleteStudentByIds(String ids) throws Exception;
 
     /**
      * 更新学生信息
@@ -43,7 +45,9 @@ public interface IStudentService {
      * @param student
      * @return
      */
-    public int insertStudent(Student student);
+    public int insertStudents(Student student);
 
     public List<Student> selectStudentAll();
+
+    public String checkPhone(Student student);
 }

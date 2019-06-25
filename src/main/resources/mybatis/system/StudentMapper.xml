@@ -4,6 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.uustop.project.system.student.mapper.StudentMapper">
 
+
     <resultMap type="Student" id="StudentResult">
         <id property="stuId" column="stu_id"/>
         <result property="stuName" column="stu_name"/>
@@ -11,41 +12,96 @@
         <result property="className" column="classname"/>
         <result property="stuAge" column="stu_age"/>
         <result property="stuSex" column="stu_sex"/>
+        <result property="phoneNumber" column="phonenumber"/>
         <result property="status" column="status"/>
         <result property="delFlag" column="del_flag"/>
     </resultMap>
 
     <sql id="selectStudentContactVo">
-        select distinct s.stu_id,s.stu_name,s.stu_age,s.stu_sex,s.status,s.del_flag
+        select distinct s.stu_id,s.stu_name,s.classId,s.classname,s.stu_age,s.stu_sex,s.status,s.phonenumber,s.del_flag
         from sys_studentinfo s
     </sql>
 
     <sql id="selectStudentVo">
-		selects.stu_id,s.stu_name,s.stu_age,s.stu_sex,s.status,s.del_flag
-        from sys_student s
+		select s.stu_id,s.stu_name,s.stu_age,s.classId,s.classname,s.stu_sex,s.phonenumber,s.status,s.del_flag
+        from sys_studentinfo s
 	</sql>
 
     <select id="selectStudentList" parameterType="Student" resultMap="StudentResult">
         <include refid="selectStudentContactVo"/>
         where s.del_flag = '0'
+        <if test="stuId !=null and stuId !=''">
+             and s.stu_id like concat('%',#{stuId},'%')
+        </if>
         <if test="stuName !=null and stuName !=''">
-            and r.stu_name like concat('%',#{stuName},'%')
+            and s.stu_name like concat('%',#{stuName},'%')
+        </if>
+        <if test="className !=null and className !=''">
+            and s.className like concat('%',#{className},'%')
         </if>
         <if test="status != null and status != ''">
-            AND s.status = #{status}
+            and s.status = #{status}
         </if>
-
     </select>
 
-    <select id="selectStudentById" parameterType="int" resultMap="StudentResult">
-        <include refid="selectStudentContactVo"/>
+    <select id="selectStudentByID" parameterType="int" resultMap="StudentResult">
+        <include refid="selectStudentVo"/>
         where s.del_flag='0' and s.stu_id=#{stuId}
     </select>
+
+    <select id="checkPhone" parameterType="String" resultMap="StudentResult">
+         select stu_id,phonenumber
+         from sys_studentinfo
+        where
+           phonenumber=#{phoneNumber} and del_flag ='0'
+    </select>
+
     
     <insert id="insertStudent" parameterType="Student">
         insert into sys_studentinfo(
-
+        <if test="stuId !=null and stuId !=0">stu_id,</if>
+        <if test="stuName !=null and stuName !=''">stu_name,</if>
+        <if test="classId !=null and classId !=''">classId,</if>
+        <if test="className !=null and className !=''">classname,</if>
+        <if test="stuAge !=null and stuAge !=''">stu_age,</if>
+        <if test="stuSex !=null and stuSex !=''">stu_sex,</if>
+        <if test="phoneNumber !=null and phoneNumber !=''">phonenumber,</if>
+        <if test="status != null">status</if>
+        )values (
+        <if test="stuId !=null and stuId !=0">#{stuId},</if>
+        <if test="stuName !=null and stuName !=''">#{stuName},</if>
+        <if test="classId !=null and classId !=''">#{classId},</if>
+        <if test="className !=null and className !=''">#{className},</if>
+        <if test="stuAge !=null and stuAge !=''">#{stuAge},</if>
+        <if test="stuSex !=null and stuSex !='' and stuSex==0" >'男',</if>
+        <if test="stuSex !=null and stuSex !='' and stuSex==1">'女',</if>
+        <if test="phoneNumber !=null and phoneNumber !=''">#{phoneNumber},</if>
+        <if test="status != null">#{status}</if>
         )
     </insert>
+
+    <update id="updateStudent" parameterType="Student">
+        update sys_studentinfo
+        <set>
+            <if test="stuName !=null and stuName !=''">stu_name=#{stuName},</if>
+            <if test="classId !=null and classId !=''">classId=#{classId},</if>
+            <if test="className !=null and className !=''">classname=#{className},</if>
+            <if test="stuAge !=null and stuAge !=''">stu_age=#{stuAge},</if>
+            <if test="stuSex !=null and stuSex !='' and stuSex==0" >stu_sex='男',</if>
+            <if test="stuSex !=null and stuSex !='' and stuSex==1">stu_sex='女',</if>
+            <if test="phoneNumber !=null and phoneNumber !=''">phonenumber=#{phoneNumber},</if>
+            <if test="status != null and status !=''">status=#{status}</if>
+        </set>
+        where stu_id=#{stuId}
+    </update>
+
+    <delete id="deleteStudentByID"  parameterType="int">
+        update sys_studentinfo set del_flag="1" where stu_id=#{stuId}
+    </delete>
+
+    <delete id="deleteStudentByIds" parameterType="Long">
+        update sys_studentinfo set del_flag="2" where stu_id=#{stuId}
+    </delete>
+
 
 </mapper> 

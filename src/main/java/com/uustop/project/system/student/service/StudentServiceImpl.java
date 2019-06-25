@@ -1,6 +1,8 @@
 package com.uustop.project.system.student.service;
 
+import com.uustop.common.constant.UserConstants;
 import com.uustop.common.support.Convert;
+import com.uustop.common.utils.StringUtils;
 import com.uustop.common.utils.security.ShiroUtils;
 import com.uustop.framework.aspectj.lang.annotation.DataScope;
 import com.uustop.project.system.student.domain.Student;
@@ -30,23 +32,26 @@ public class StudentServiceImpl implements IStudentService {
      * @return
      */
     @Override
-    @DataScope(tableAlias = "u")
+    @DataScope(tableAlias = "t")
     public List<Student> selectStudentList(Student student) {
+
         return studentMapper.selectStudentList(student);
     }
 
     /**
      * 通过班级查询学生信息
+     *
      * @param classId
      * @return
      */
     @Override
-    public List<Student>selectStudentByClassId(int classId){
+    public List<Student> selectStudentByClassId(Integer classId) {
         return selectStudentByClassId(classId);
     }
 
     /**
      * 查询所有学生信息
+     *
      * @return
      */
     @Override
@@ -57,27 +62,35 @@ public class StudentServiceImpl implements IStudentService {
 
     /**
      * 通过学号查询学生信息
+     *
      * @param studentID
      * @return
      */
     @Override
-    public List<Student> selectStudentByID(int studentID) {
+    public Student selectStudentByID(int studentID) {
         return studentMapper.selectStudentByID(studentID);
     }
 
     /**
      * 通过学号删除学生信息
-     * @param studentID
+     *
+     * @param stuId
      * @return
      */
     @Override
-    public int deleteStudentByID(int studentID) {
-        return studentMapper.deleteStudentByID(studentID);
+    public int deleteStudentByID(Integer stuId) {
+        return studentMapper.deleteStudentByID(stuId);
     }
 
 
+    public int deleteStudentByIds(String ids) throws Exception {
+        Long[] userIds = Convert.toLongArray(ids);
+        return studentMapper.deleteStudentByIds(userIds);
+    }
+
     /**
-     *修改学生信息
+     * 修改学生信息
+     *
      * @param student
      * @return
      */
@@ -87,10 +100,9 @@ public class StudentServiceImpl implements IStudentService {
     }
 
     @Override
-    public int insertStudent(Student student) {
-        studentMapper.insertStudent(student);
+    public int insertStudents(Student student) {
         ShiroUtils.clearCachedAuthorizationInfo();
-        return insertStudentMenu(student);
+        return studentMapper.insertStudent(student);
     }
 
     public int insertStudentMenu(Student student) {
@@ -106,6 +118,17 @@ public class StudentServiceImpl implements IStudentService {
             rows = studentMenuMapper.batchStudentMenu(list);
         }
         return rows;
+    }
+
+    @Override
+    public String checkPhone(Student student) {
+        Long stuId = StringUtils.isNull(student.getStuId()) ? -1L : student.getStuId();
+        Student info = studentMapper.checkPhone(student.getPhoneNumber());
+        if (StringUtils.isNotNull(info) && info.getStuId() != stuId.longValue()) {
+            return UserConstants.USER_PHONE_NOT_UNIQUE;
+        }
+        return UserConstants.USER_PHONE_UNIQUE;
+
     }
 
 

@@ -1,5 +1,6 @@
 package com.uustop.project.system.student.controller;
 
+import com.uustop.common.support.Convert;
 import com.uustop.common.utils.poi.ExcelUtil;
 import com.uustop.framework.aspectj.lang.annotation.Log;
 import com.uustop.framework.aspectj.lang.enums.BusinessType;
@@ -37,7 +38,7 @@ public class StudentController extends BaseController {
     @ResponseBody
     public TableDataInfo list(Student student){
         startPage();
-        List<Student> students= studentService.selectStudentAll();
+        List<Student> students= studentService.selectStudentList(student);
         return getDataTable(students);
     }
 
@@ -69,7 +70,7 @@ public class StudentController extends BaseController {
     @ResponseBody
     public AjaxResult addSave(Student student)
     {
-        return toAjax(studentService.insertStudent(student));
+        return toAjax(studentService.insertStudents(student));
     }
 
     /**
@@ -78,10 +79,10 @@ public class StudentController extends BaseController {
      * @param mmmap
      * @return
      */
-    @GetMapping("/edit/{stuId}")
-    public String edit(@PathVariable("stuId") int studentID, ModelMap mmmap)
+    @GetMapping("/edit/{studentId}")
+    public String edit(@PathVariable("studentId") Integer studentId, ModelMap mmmap)
     {
-        mmmap.put("student",studentService.selectStudentByID(studentID));
+        mmmap.put("student",studentService.selectStudentByID(studentId));
         return prefix +"/edit";
     }
 
@@ -96,21 +97,25 @@ public class StudentController extends BaseController {
     @Transactional(rollbackFor = Exception.class)
     @ResponseBody
     public AjaxResult editSave(Student student){
+
         return toAjax(studentService.updataStudent(student));
     }
 
-    @RequiresPermissions("system:student:remove")
+
     @Log(title = "学生管理",businessType = BusinessType.DELETE)
-    @PostMapping("/remove")
+    @RequiresPermissions("system:student:remove")
+    @PostMapping("/remove/{stuId}")
     @ResponseBody
-    public AjaxResult remove(int studentId)
+    public AjaxResult remove(@PathVariable("stuId") Integer stuId)
     {
-        try {
-            return toAjax(studentService.deleteStudentByID(studentId));
-        }
-        catch (Exception e){
-            return error(e.getMessage());
-        }
+        return toAjax(studentService.deleteStudentByID(stuId));
+    }
+
+    @PostMapping("/checkPhone")
+    @ResponseBody
+    public String checkPhone(Student student)
+    {
+        return studentService.checkPhone(student);
     }
 
 

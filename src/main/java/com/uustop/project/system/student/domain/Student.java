@@ -7,23 +7,42 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 public class Student {
 
     @Excel(name="学生学号")
-    private int stuId;
+    private Integer stuId;
     @Excel(name = "学生姓名")
     private String stuName;
     @Excel(name = "班级编号")
-    private int classId;
+    private Integer classId;
     @Excel(name = "班级名称")
     private String className;
     @Excel(name = "学生年龄")
     private String stuAge;
     @Excel(name="学生性别")
     private String stuSex;
+    @Excel(name = "电话")
+    private String phoneNumber;
+
     @Excel(name = "学生状态")
     private String status;
     @Excel(name = "是否删除")
     private String delFlag;
 
     private Long[] menuIds;
+
+    public Integer getStuId() {
+        return stuId;
+    }
+
+    public void setStuId(Integer stuId) {
+        this.stuId = stuId;
+    }
+
+    public Integer getClassId() {
+        return classId;
+    }
+
+    public void setClassId(Integer classId) {
+        this.classId = classId;
+    }
 
     public Long[] getMenuIds() {
         return menuIds;
@@ -41,13 +60,7 @@ public class Student {
         this.delFlag = delFlag;
     }
 
-    public int getStuId() {
-        return stuId;
-    }
 
-    public void setStuId(int stuId) {
-        this.stuId = stuId;
-    }
 
     public String getStuName() {
         return stuName;
@@ -57,13 +70,6 @@ public class Student {
         this.stuName = stuName;
     }
 
-    public int getClassId() {
-        return classId;
-    }
-
-    public void setClassId(int classId) {
-        this.classId = classId;
-    }
 
     public String getClassName() {
         return className;
@@ -97,6 +103,14 @@ public class Student {
         this.status = status;
     }
 
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
 
     @Override
     public String toString() {
@@ -107,6 +121,7 @@ public class Student {
                 .append("className", getClassName())
                 .append("stuAge", getStuAge())
                 .append("stuSex", getStuSex())
+                .append("phoneNumber",getPhoneNumber())
                 .append("status", getStatus())
                 .append("delFlag", getDelFlag())
                 .toString();
